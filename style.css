@@ -311,128 +311,69 @@ span{
     margin: 0.2rem 0;
 }
 
-@media (max-width: 600px){
-    /*----------header-------*/
-    .logo img{
-        height: 100px;
-        align-items: center;
+/* Ajustes gerais para dispositivos menores */
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        padding: 1rem;
     }
 
-    /*----------inicio-------*/
-    .titulo-inicio{
-        font-size: 30px;
+    .logo img {
+        height: 150px;
     }
 
-    /*----------card-------*/
-    .hero{
-        padding: 100px;
-        width: 45%;
-    }
-    #titlehero{ 
-        font-size: 10px;
+    .nav-menu a {
+        font-size: 1.5rem;
     }
 
-    /*----------sobre-------*/
-    #sobre{
-        padding: 50px;
-        gap: 10px;
-        padding-bottom: 100px;
-    }
-    .title-sobre  h2{
-        letter-spacing: .5px;
-        margin-bottom: 10px;
+    .titulo-inicio {
         font-size: 20px;
-        width: 20%;
-    }
-    .title-sobre  p{
-        width: 500%;
-    }
-    .img-sobre{
-        width: 50%;
-    }
-    .img-sobre img{
-        height: 200px;
-        flex-direction: column-reverse;
     }
 
-    /*----------destinos-------*/
-    #destinos{
-        display: flex;
-        justify-content: center;
-        padding: 0px;
-        gap: 10px;
-        font-size: 10px;
-    }
-    .title-destino{
-        font-size: 20px;
-        width: 150%;
-    }
-    .card-container{
-        gap: 20px;
-    }
-    .card-content{
-        padding: 10px;
-    }
-    .card{
-        width: 250px;
-
-    }
-    .card  img{
-        width: 100%;
-        height: auto;
-        border-radius: 5px 5px 0px 0px;
-    }
-    .card-content h3{
-        font-size: 25px;
-        margin-bottom: 5px;
-    }
-    .card-content p{
-        width: 100%;
-    }
-    .card-content .btn{
-        display: inline-block;
-        padding: 8px 16px;
-        background-color: #333;
-        color: #fff;
-        border-radius: 5px;
-        margin-top: 16px;
+    .hero {
+        padding: 80px;
+        width: 65%;
+        height: 90%;
     }
 
-    /*************** FOOTER *****/
-    .logo-column {
-        align-items: center;
+    #titlehero{
+        text-transform: lowercase;
     }
-    .logo-column img {
-        width: 100px;
+
+    #sobre {
+        flex-direction: column;
+        padding: 100px 20px;
+        gap: 50px;
     }
-    .social-column {
+
+    .img-sobre img {
+        height: 250px;
+    }
+
+    #destinos {
+        flex-direction: column;
+        padding: 50px 20px;
+        font-size: 2rem;
         text-align: center;
     }
-    .social-links {
-        gap: .5rem;
-    }
-    .social-links a {
-        font-size: 1.1rem;
-    }
-    .social-links a i {
-        margin-right: 20rem;
+
+    .card-container {
+        gap: 20px;
     }
 
+    .card {
+        width: 90%;
+    }
 
+    #footer {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
 
-
-
-
-
-
-
-
-
-
-    
-    
-
-
-
-
+    .container-footer {
+        align-items: center;
+        flex-direction: column;
+    }
 }
